@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="60" id="yqW-ut-Cnj" customClass="PlayerCell" customModule="UEFA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yqW-ut-Cnj" id="bfV-tm-vnu">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Qok-d0-SUc">
+                        <rect key="frame" x="8" y="9.5" width="41" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="41" id="C9g-O0-ydu"/>
+                            <constraint firstAttribute="height" constant="41" id="sSU-18-Pgt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6i-Gd-Whi">
+                        <rect key="frame" x="57" y="28" width="45.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8N-Fv-Yar">
+                        <rect key="frame" x="380.5" y="18" width="25.5" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XID-FP-4Wd">
+                        <rect key="frame" x="57" y="8.5" width="93" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="n6i-Gd-Whi" firstAttribute="leading" secondItem="XID-FP-4Wd" secondAttribute="leading" id="3Bv-t0-zjV"/>
+                    <constraint firstItem="Qok-d0-SUc" firstAttribute="centerY" secondItem="bfV-tm-vnu" secondAttribute="centerY" id="5uy-ob-7ys"/>
+                    <constraint firstItem="n6i-Gd-Whi" firstAttribute="top" secondItem="XID-FP-4Wd" secondAttribute="bottom" id="D8g-Np-wAQ"/>
+                    <constraint firstItem="e8N-Fv-Yar" firstAttribute="centerY" secondItem="bfV-tm-vnu" secondAttribute="centerY" id="LIo-Kj-nst"/>
+                    <constraint firstItem="Qok-d0-SUc" firstAttribute="leading" secondItem="bfV-tm-vnu" secondAttribute="leading" constant="8" id="QJd-VZ-DpI"/>
+                    <constraint firstAttribute="trailing" secondItem="e8N-Fv-Yar" secondAttribute="trailing" constant="8" id="aC3-8R-IGL"/>
+                    <constraint firstItem="XID-FP-4Wd" firstAttribute="centerY" secondItem="Qok-d0-SUc" secondAttribute="centerY" constant="-12" id="aLD-4K-ddY"/>
+                    <constraint firstItem="XID-FP-4Wd" firstAttribute="leading" secondItem="Qok-d0-SUc" secondAttribute="trailing" constant="8" symbolic="YES" id="aLT-z8-hRg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="country" destination="n6i-Gd-Whi" id="lxL-TM-cdT"/>
+                <outlet property="number" destination="e8N-Fv-Yar" id="obD-MD-DJ0"/>
+                <outlet property="playerName" destination="XID-FP-4Wd" id="1x1-J5-WoF"/>
+                <outlet property="profileImage" destination="Qok-d0-SUc" id="6wc-iU-lOm"/>
+            </connections>
+            <point key="canvasLocation" x="-391.304347826087" y="-24.107142857142858"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile-icon" width="256" height="256"/>
+    </resources>
+</document>
