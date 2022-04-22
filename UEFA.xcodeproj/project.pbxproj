@@ -21,6 +21,7 @@
 		DE7CE67A2811973A0091B14C /* ClubSquadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7CE6792811973A0091B14C /* ClubSquadViewController.swift */; };
 		DE7CE67D28119D5B0091B14C /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7CE67C28119D5B0091B14C /* PlayerCell.swift */; };
 		DE7CE67F28119D840091B14C /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7CE67E28119D840091B14C /* PlayerCell.xib */; };
+		DED37B052812AE5100006702 /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED37B042812AE5100006702 /* PlayersModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DE7CE6792811973A0091B14C /* ClubSquadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubSquadViewController.swift; sourceTree = "<group>"; };
 		DE7CE67C28119D5B0091B14C /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		DE7CE67E28119D840091B14C /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
+		DED37B042812AE5100006702 /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 		DE7CE67528115ECF0091B14C /* ClubSquad */ = {
 			isa = PBXGroup;
 			children = (
+				DED37B032812AE3E00006702 /* Model */,
 				DE7CE67B28119D3B0091B14C /* TableView */,
 				DE7CE67628115F720091B14C /* ClubSquad.storyboard */,
 				DE7CE6792811973A0091B14C /* ClubSquadViewController.swift */,
@@ -188,6 +191,14 @@
 				DE041D42281289760087F002 /* ClubSquadViewController+TableView.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		DED37B032812AE3E00006702 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DED37B042812AE5100006702 /* PlayersModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 				DE7CE643281151380091B14C /* AppDelegate.swift in Sources */,
 				DE7CE645281151380091B14C /* SceneDelegate.swift in Sources */,
 				DE7CE67A2811973A0091B14C /* ClubSquadViewController.swift in Sources */,
+				DED37B052812AE5100006702 /* PlayersModel.swift in Sources */,
 				DE7CE67D28119D5B0091B14C /* PlayerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
