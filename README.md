@@ -11,6 +11,7 @@ UEFA Code Test, no Pods - no Swift package
 * `open UEFA.xcodeproj`
 
 ### App Tree
+```
 ├── App
 │   ├── AppDelegate.swift
 │   ├── SceneDelegate.swift
@@ -20,3 +21,4 @@ UEFA Code Test, no Pods - no Swift package
     ├── Assets.xcassets
     ├── Base.lproj
     └── Info.plist
+```
