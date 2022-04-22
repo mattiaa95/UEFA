@@ -8,14 +8,16 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
     @IBAction func UCLButtonTouch(_ sender: Any) {
-        let vc = UIStoryboard(name: "ClubSquad", bundle: nil).instantiateInitialViewController()
-        self.present(vc!, animated: true, completion: nil)
+        ClubSquadViewController.presentClubSquadViewControllerWithTheming(UIColor(named: "blue")!,
+                                                                          UIImage(named: "Header")!,
+                                                                          self)
     }
     
     @IBAction func UELButtonTouch(_ sender: Any) {
-        let vc = UIStoryboard(name: "ClubSquad", bundle: nil).instantiateInitialViewController()
-        self.present(vc!, animated: true, completion: nil)
+        ClubSquadViewController.presentClubSquadViewControllerWithTheming(UIColor(named: "gray")!,
+                                                                          UIImage(named: "Header-2")!,
+                                                                          self)
     }
 }

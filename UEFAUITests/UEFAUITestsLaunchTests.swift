@@ -29,4 +29,22 @@ class UEFAUITestsLaunchTests: XCTestCase {
         attachment.lifetime = .keepAlways
         add(attachment)
     }
+    
+    func testUCL() throws {
+        let app = XCUIApplication()
+        app.launch()
+        app.staticTexts["UCL"].tap()
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        app.buttons["Back"].tap()
+        add(attachment)
+    }
+    
+    func testUEL() throws {
+        let app = XCUIApplication()
+        app.launch()
+        app.staticTexts["UEL"].tap()
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        app.buttons["Back"].tap()
+        add(attachment)
+    }
 }
