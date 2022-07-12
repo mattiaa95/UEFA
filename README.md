@@ -1,5 +1,5 @@
 # UEFA
-UEFA Code Test, no Pods - no Swift package
+UEFA Code Test UIKit, no Pods - no Swift package
 
 ## Requesites
 * Swift 5.0
